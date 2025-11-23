@@ -144,10 +144,10 @@
         misc_layer {
             display-name = "Misc";
             bindings = <
-                &none      &none      &none      &none      &none      &none          &bt BT_CLR &none        &none        &none        &none        &none
+                &none      &none      &none      &none      &none      &none          &none      &none        &none        &none        &none        &none
                 &none      &none      &none      &none      &tog GAME  &none          &none      &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT   &none
                 &none      &none      &none      &none      &none      &none          &none      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &none
-                                                 &none      &none      &none          &kp C_STOP &kp C_PP     &kp C_MUTE
+                                                 &none      &none      &bt BT_CLR     &kp C_STOP &kp C_PP     &kp C_MUTE
             >;
         };
 
