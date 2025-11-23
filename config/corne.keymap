@@ -101,10 +101,10 @@
         default_layer {
             display-name = "Gallium";
             bindings = <
-                &none      &kp B      &kp L      &kp D           &kp C          &kp V                &kp J                 &kp Y                  &kp O                  &kp U             &kp SQT           &none
-                &none      &kp N      &hml LALT R &hml LCTRL T   &hml LGUI S    &kp G                &kp P                 &hmr RGUI H            &hmr RCTRL A           &hmr RALT E       &kp I             &none
-                &none      &kp X      &kp Q      &kp M           &kp W          &kp Z                &kp K                 &kp F                  &kp COMMA              &kp SEMI          &kp FSLH          &none
-                                                 &lt MISC BSPC   &lt NAV SPACE  &lt FUN DEL          &lt SYM ENTER         &td_shift              &lt NUM TAB
+                &none      &kp B        &kp L           &kp D           &kp C           &kp V           &kp J       &kp Y           &kp O           &kp U       &kp SQT     &none
+                &none      &hml LGUI N  &hml LALT R     &hml LCTRL T    &hml LSHFT S    &kp G           &kp P       &hmr LSHFT H    &hmr LCTRL A    &hmr LALT E &hmr LGUI I &none
+                &none      &kp X        &kp Q           &kp M           &kp W           &kp Z           &kp K       &kp F           &kp COMMA       &kp SEMI    &kp FSLH    &none
+                                        &lt MISC BSPC   &lt NAV SPACE   &lt FUN DEL     &lt SYM ENTER   &td_shift   &lt NUM TAB
             >;
         };
 
