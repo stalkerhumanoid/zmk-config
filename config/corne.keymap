@@ -74,7 +74,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Gallium"
+            display-name = "Gallium";
             bindings = <
                 &none      &kp B            &kp L           &kp D           &kp C          &kp V                &kp J                 &kp Y                  &kp O                  &kp U             &kp SQT           &none
                 &none      &kp N            &hm LALT R      &hm LCTRL T     &hm LGUI S     &kp G                &kp P                 &hm LGUI H             &hm LCTRL A            &hm LALT E        &kp I             &none
