@@ -107,7 +107,7 @@
                 &none      &kp B        &kp L           &kp D           &kp C           &kp V           &kp J       &kp Y           &kp O           &kp U       &kp SQT     &none
                 &none      &hml LGUI N  &hml LALT R     &hml LCTRL T    &hml LSHFT S    &kp G           &kp P       &hmr LSHFT H    &hmr LCTRL A    &hmr LALT E &hmr LGUI I &none
                 &none      &kp X        &kp Q           &kp M           &kp W           &kp Z           &kp K       &kp F           &kp COMMA       &kp PERIOD  &kp FSLH    &none
-                                        &mylt MISC BSPC &mylt NAV SPACE &mylt FUN DEL   &mylt SYM TAB   &td_shift   &mylt NUM ENTER
+                                        &mylt MISC BSPC &mylt NAV SPACE &mylt FUN TAB   &mylt SYM ENTER &td_shift   &mylt NUM DEL
             >;
         };
 
@@ -137,7 +137,7 @@
                 &none      &none      &none      &none      &none      &none          &kp K_UNDO &kp K_CUT &kp K_COPY &kp K_PASTE  &kp K_REDO &none
                 &none      &none      &none      &none      &none      &none          &caps_word &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
                 &none      &none      &none      &none      &none      &none          &kp INS    &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &none
-                                                 &none      &none      &none          &kp RET    &kp BSPC   &kp DEL
+                                                 &none      &none      &none          &none      &none      &none
             >;
         };
 
@@ -157,7 +157,7 @@
                 &none      &none      &none      &none      &none      &none          &kp PSCRN       &kp F7     &kp F8     &kp F9     &kp F12    &none
                 &none      &none      &none      &none      &none      &none          &kp SLCK        &kp F4     &kp F5     &kp F6     &kp F11    &none
                 &none      &none      &none      &none      &none      &none          &kp PAUSE_BREAK &kp F1     &kp F2     &kp F3     &kp F10    &none
-                                                 &none      &none      &none          &kp K_APP       &kp SPACE  &kp TAB
+                                                 &none      &none      &none          &none           &none      &none
             >;
         };
 
