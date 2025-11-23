@@ -18,6 +18,11 @@
     flavor = "balanced";
 };
 
+&mt {
+    tapping-term-ms = <100>;
+    flavor = "balanced";
+};
+
 / {
     combos {
     //    compatible = "zmk,combos";
@@ -60,14 +65,14 @@
     };
 
     behaviors {
-        hm: home_row_mod {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            // quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
+        // hm: home_row_mod {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     tapping-term-ms = <100>;
+        //     // quick-tap-ms = <0>;
+        //     flavor = "balanced";
+        //     bindings = <&kp>, <&kp>;
+        // };
     };
 
     keymap {
@@ -77,7 +82,7 @@
             display-name = "Gallium";
             bindings = <
                 &none      &kp B      &kp L      &kp D           &kp C          &kp V                &kp J                 &kp Y                  &kp O                  &kp U             &kp SQT           &none
-                &none      &kp N      &hm LALT R &hm LCTRL T     &hm LGUI S     &kp G                &kp P                 &hm LGUI H             &hm LCTRL A            &hm LALT E        &kp I             &none
+                &none      &kp N      &mt LALT R &mt LCTRL T     &mt LGUI S     &kp G                &kp P                 &mt LGUI H             &mt LCTRL A            &mt LALT E        &kp I             &none
                 &none      &kp X      &kp Q      &kp M           &kp W          &kp Z                &kp K                 &kp F                  &kp COMMA              &kp SEMI          &kp FSLH          &none
                                                  &lt MISC BSPC   &lt NAV SPACE  &lt FUN DEL          &lt SYM ENTER         &kp LSHFT              &lt NUM TAB
             >;
