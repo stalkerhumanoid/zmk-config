@@ -11,13 +11,6 @@
 #define FUN 5
 #define GAME 6
 
-
-// Behavior Overrides
-&lt {
-    tapping-term-ms = <100>;
-    flavor = "balanced";
-};
-
 / {
     combos {
     //    compatible = "zmk,combos";
@@ -64,10 +57,10 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            // quick-tap-ms = <175>;
-            require-prior-idle-ms = <100>;
             flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
             hold-trigger-on-release;
@@ -77,10 +70,10 @@
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            // quick-tap-ms = <175>;
-            require-prior-idle-ms = <100>;
             flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
             hold-trigger-on-release;
@@ -90,8 +83,18 @@
         td_shift: tap_dance_shift {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
             bindings = <&sk LSHFT>, <&caps_word>;
+        };
+
+        mylt: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <100>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Layer-Tap";
         };
     };
 
@@ -104,7 +107,7 @@
                 &none      &kp B        &kp L           &kp D           &kp C           &kp V           &kp J       &kp Y           &kp O           &kp U       &kp SQT     &none
                 &none      &hml LGUI N  &hml LALT R     &hml LCTRL T    &hml LSHFT S    &kp G           &kp P       &hmr LSHFT H    &hmr LCTRL A    &hmr LALT E &hmr LGUI I &none
                 &none      &kp X        &kp Q           &kp M           &kp W           &kp Z           &kp K       &kp F           &kp COMMA       &kp SEMI    &kp FSLH    &none
-                                        &lt MISC BSPC   &lt NAV SPACE   &lt FUN DEL     &lt SYM ENTER   &td_shift   &lt NUM TAB
+                                        &mylt MISC BSPC &mylt NAV SPACE &mylt FUN DEL   &mylt SYM ENTER &td_shift   &mylt NUM TAB
             >;
         };
 
