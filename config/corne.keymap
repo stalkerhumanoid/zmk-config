@@ -26,8 +26,8 @@
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
-                lower_layer {
-                        display-name = "Lower Layer";
+                extra1 {
+                        display-name = "Extra Layer 1";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -41,8 +41,8 @@
                         >;
                 };
 
-                raise_layer {
-                        display-name = "Raise Layer";
+                extra2 {
+                        display-name = "Extra Layer 2";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -54,6 +54,21 @@
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
+                };
+
+                extra3 {
+                        display-name = "Extra Layer 3";
+                        status = "reserved";
+                };
+
+                extra4 {
+                        display-name = "Extra Layer 4";
+                        status = "reserved";
+                };
+
+                extra5 {
+                        display-name = "Extra Layer 5";
+                        status = "reserved";
                 };
         };
 };
