@@ -12,6 +12,11 @@
 #define GAME 6
 #define DEAD 7
 
+// Keep Caps Word active through hyphens as well as the defaults
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BSPC DEL>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
